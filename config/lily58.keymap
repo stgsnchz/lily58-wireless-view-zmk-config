@@ -22,21 +22,7 @@
 &nice_view_spi { cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        escape {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <10 56>;
-            layers = <2>;
-        };
-
-        left_par {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <56 9>;
-            layers = <2>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         pgup: pgup {
